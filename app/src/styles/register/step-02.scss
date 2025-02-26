@@ -1,9 +1,9 @@
 .step-02{
     width: 45rem;
-    margin: 5rem auto;
+    margin: 6rem auto;
 
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 30% 13% 1fr;
     grid-template-rows: auto repeat(3, 1fr); 
     gap: 2rem;
 }

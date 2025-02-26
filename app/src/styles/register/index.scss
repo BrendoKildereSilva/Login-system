@@ -1,6 +1,7 @@
 @import '../main.scss';
 @import './step-02.scss';
 @import './step-01.scss';
+@import './step-03.scss';
 
 
 [hidden] {
@@ -134,12 +135,6 @@ form div:nth-child(3) label
     background: $primary-strong;
 }
 
-
-
-
-.step-03{
-    display: none;
-}
 
 
 

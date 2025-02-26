@@ -17,12 +17,12 @@
     <form>
 
       <header>
-        <h1>Create acount</h1>
+        <h1>Create account</h1>
         <span>Already have an account? <a href="login.html"> Log in! </a></span>
       </header>
 
 
-      <div class="step-01">
+      <div class="step-01" hidden>
 
         <div>
           <input type="text" id="input-name" required>
@@ -73,9 +73,10 @@
        </div>
 
        
-       <div  class="step-03" hidden>
+       <div  class="step-03">
         <span>Add profile picture</span>
-        <div class="container-img"></div>
+        <label class="container-add-img" for="input-imagem"></label>
+        <input type="file" id="input-imagem">
         <Button>Create account</Button>
        </div>
 
