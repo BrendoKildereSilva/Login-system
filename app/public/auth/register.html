@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../src/styles/main.scss">
-  <link rel="stylesheet" href="../../src/styles/register.scss">
+  <link rel="stylesheet" href="../../src/styles/register/index.scss">
   <title>Document</title>
 </head>
 <body>
@@ -17,34 +16,68 @@
     
     <form>
 
-      <div>
+      <header>
         <h1>Create acount</h1>
         <span>Already have an account? <a href="login.html"> Log in! </a></span>
-      </div>
+      </header>
 
-      <div class="inputs">
+
+      <div class="step-01">
+
         <div>
-          <input type="text" id="input-name">
+          <input type="text" id="input-name" required>
           <label for="input-name">Name</label>
         </div>
         
         <div>
-          <input type="text" id="input-email">
+          <input type="text" id="input-email" required>
           <label for="input-email">E-mail</label>
         </div>
 
         <div>
-          <input type="password" id="input-password">
+          <input type="password" id="input-password" required>
           <label for="input-password">password</label>
+        </div>
+        
+        <div>
+          <input type="password" id="input-confirm-password" required>
+          <label for="input-confirm-password">confirm password</label>
+        </div>
+          
+        <button class="button-next">Next</button>         
+
+      </div>
+
+       <div  class="step-02" hidden>
+        <div>
+          <input type="text" id="input-ddi" required>
+          <label for="input-ddi">DDI</label>
+        </div>
+        
+        <div>
+          <input type="text" id="input-phone" required>
+          <label for="input-phone">Phone</label>
         </div>
 
         <div>
-          <input type="password" id="input-confirm-password">
-          <label for="input-confirm-password">confirm password</label>
+          <input type="text" id="Date-of-Birth" required>
+          <label for="Date-of-Birth">Date of Birth</label>
         </div>
         
-        <button>Next</button>          
-      </div>
+        <div>
+          <input type="text" id="input-gender" required>
+          <label for="input-gender">Gender</label>
+        </div>
+          
+        <button class="button-next">Next</button>    
+       </div>
+
+       
+       <div  class="step-03" hidden>
+        <span>Add profile picture</span>
+        <div class="container-img"></div>
+        <Button>Create account</Button>
+       </div>
 
 
     </form>
