@@ -22,7 +22,7 @@
       </header>
 
 
-      <div class="step-01" hidden>
+      <div class="step-01" id="step-01">
 
         <div>
           <input type="text" id="input-name" required>
@@ -44,11 +44,11 @@
           <label for="input-confirm-password">confirm password</label>
         </div>
           
-        <button class="button-next">Next</button>         
+        <button id="button-next-step-01" class="button-next">Next</button>         
 
       </div>
 
-       <div  class="step-02" hidden>
+       <div  class="step-02" id="step-02" hidden="true">
         <div>
           <input type="text" id="input-ddi" required>
           <label for="input-ddi">DDI</label>
@@ -69,15 +69,22 @@
           <label for="input-gender">Gender</label>
         </div>
           
-        <button class="button-next">Next</button>    
+        <button id="button-next" class="button-next">Next</button>    
        </div>
 
        
-       <div  class="step-03">
+       <div  class="step-03" id="step-03" hidden="true">
         <span>Add profile picture</span>
         <label class="container-add-img" for="input-imagem"></label>
         <input type="file" id="input-imagem">
         <Button>Create account</Button>
+       </div>
+
+       <div class="container-error" id="container-error">
+           <p id="error-input-name"></p>
+           <p id="error-input-email"></p>
+           <p id="error-input-password"></p>
+           <p id="error-input-confirm-password"></p>
        </div>
 
 
@@ -89,3 +96,5 @@
 
 
 <script type= "module" src="../../src/scripts/utilis/auth.js"></script>
+<script type= "module" src="../../src/scripts/utilis/configAxios.js"></script>
+<script type= "module" src="../../src/scripts/register/step01.js"></script>

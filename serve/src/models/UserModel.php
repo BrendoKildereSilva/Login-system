@@ -18,4 +18,11 @@ class UserModel{
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
+
+  public function checkEmail($email){
+    $sql = "SELECT email FROM users WHERE email = '$email'";
+    $stmt = $this->conn->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
 }

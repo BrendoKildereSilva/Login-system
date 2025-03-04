@@ -6,10 +6,12 @@ use App\Models\UserModel;
 class userController{
   
   public function index(){
+    header("Access-Control-Allow-Origin: *");
+    header('Content-Type: application/json');
+
     $userModel = new UserModel();
     $users = $userModel->getAllUser();
 
-    header('Content-Type: application/json');
     echo json_encode($users);
-  }
+  } 
 }
